@@ -1,0 +1,769 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>웹이력서 | 데헷</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href ="css/mystory.css?ver=3" rel="stylesheet">
+	<script>
+		$('.carousel').carousel({
+		  interval: 2000,
+		  pause : true
+		})
+	</script>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body id ="top">
+
+	<nav class="navbar navbar-default navbar-fixed-top affix-top" id = "navimain34"data-spy="affix" data-offset-top="60">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navibar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">TOMATO</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navibar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#portfolio">PORTFOLIO<span class="sr-only">(current)</span></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">ABOUT<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#aout">AOUT</a></li>
+            <li><a href="#skill">SKILL</a></li>
+            <li><a href="#education">EDUCATION</a></li>
+            <li><a href="#self">SELF INTRODUCTION</a></li>
+            <li class="divider"></li>
+            <li><a href="#poto">POTO</a></li>
+            <li class="divider"></li>
+            <li><a href="#video">VIDEO</a></li>
+          </ul>
+        </li>
+		<li><a href = "#contact">CONTACT US</a></li>
+		<li><a href = "javascipt:void(0)" data-toggle="modal" data-target="#mail"><span class= "glyphicon glyphicon-envelope"></span></a></li>
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<script>
+	$(function(){
+	$("nav ul li a").on("click",function(e){
+		if(this.hash !== ""){
+			e.preventDefault();
+			var abc = this.hash;
+			$("html,body").animate({
+			scrollTop:$(abc).offset().top},800);
+			}
+		});
+	});
+</script>
+
+<div id="carousel-aaa" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-aaa" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-aaa" data-slide-to="1"></li>
+    <li data-target="#carousel-aaa" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="img/elephant-2380009_1920.jpg" alt="portfolio1" style = "height : 100%;">
+      <div class="carousel-caption">
+        WEB PROGRAMING PORTFOLIO
+      </div>
+    </div>
+	<div class="item">
+      <img src="img/fantasy-3077928_1920.jpg" alt="portfolio1" style = "height : 100%;">
+      <div class="carousel-caption">
+        APPROGRAMING PORTFOLIO
+      </div>
+    </div>
+	<div class="item">
+      <img src="img/doors-1767562_1920.jpg" alt="portfolio1" style = "height : 100%;">
+      <div class="carousel-caption">
+        WEB PROGRAMING PORTFOLIO
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-aaa" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-aaa" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<section class = "container-fluid" id ="portfolio" style = "background : #CEF6F5;">
+	<div class = "container">
+		<h2 class = "port-title">PORTFOLIO</h2>
+		<p class = "txt">JAVA, PHP, JSP 프로그램 개발 포토폴리오</p>
+		<div class = "row">
+			<div class ="col-xs-12 col-md-3 col-lg-3">
+				<a href = "" data-toggle="modal" data-target="#myModal"><img src ="img/matocup.jpg" alt="" style = "width:100%; height : 100%;"></a>
+			</div>
+			<div class ="col-xs-12 col-md-3 col-lg-3">
+				<a href = "" data-toggle="modal" data-target="#myModal2"><img src ="img/tree_main.jpg" alt=""  style = "width:100%; height : 100%;"></a>
+			</div>
+			<div class ="col-xs-12 col-md-3 col-lg-3">
+				<a href = "" data-toggle="modal" data-target="#myModal4"><img src ="img/jsp1.jpg" alt=""  style = "width: 100%; height : 100%;"></a>
+			</div>
+			<div class ="col-xs-12 col-md-3 col-lg-3">
+				<a href = "" data-toggle="modal" data-target="#myModal3"><img src ="img/z1.PNG" alt=""  style = "width: 100%;"></a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class = "container-fluid" id ="about" style ="background:url(img/background-3394066_1280.jpg) no-repeat right top; background-size:cover;">
+	<div class = "container">
+		<h2 class = "port-title" style = " color : white;">ABOUT</h2>
+		<p class = "txt"style = "color : white; text-align : right;">안녕하세요 저의 이름은 홍석인<br> 내 취미는 독서, 영화, 게임 입니다.<br>응용SW개발자, Web programmer, Frontend&Backend Development 개발자 되길 꿈꾸는 청년입니다</p>
+		<div class ="row">
+			<div class ="col-xs-1 col-xs-offset-4" style = "color : white">NAME</div>
+			<div class = "col-xs-3 col-xs-offset-1" style = "color : white">홍석인</div>
+			<div class ="col-xs-1 col-xs-offset-4"style = "color : white">Email</div>
+			<div class = "col-xs-3 col-xs-offset-1"style = "color : white">ghdtjr9734@naver.com</div>
+			<div class ="col-xs-1 col-xs-offset-4"style = "color : white">Pohn</div>
+			<div class = "col-xs-3 col-xs-offset-1"style = "color : white">010-9836-4200</div>
+		</div>
+	</div>
+</section>
+
+<section class = "container-fluid" id ="skill">
+	<div class = "container">
+		<h2 class = "port-title">SKILL</h2>
+		<p class = "txt">인내와 창의력으로 끝까지 도전하여 <br> 전문간로 대우받고 회사에 유익이 되는 사원이 되겠습니다.</p>
+		<div class ="row">
+			<div class = "col-xs-12 col-md-4 col-lg-4">
+				<img src = "img/html.jpg" style = "width:100%">
+			</div>
+			<div class = "col-xs-12 col-md-4 col-lg-4">
+				<img src = "img/jquery.jpg" style = "width:100%">
+			</div>
+			<div class = "col-xs-12 col-md-4 col-lg-4">
+				<img src = "img/database.jpg" style = "width:100%">
+			</div>
+		</div>
+		<div class ="row">
+			<div class = "col-xs-12 col-md-4 col-lg-4">
+				<img src = "img/jsp.jpg" style = "width:100%">
+			</div>
+			<div class = "col-xs-12 col-md-4 col-lg-4">
+				<img src = "img/java.jpg" style = "width:100%">
+			</div>
+			<div class = "col-xs-12 col-md-4 col-lg-4">
+				<img src = "img/mysql.jpg" style = "width:100%">
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class = "container-fluid" id = "education">
+	<div class = "container">
+		<h2 class = "port-title">EDUCATION</h2>
+		<p class = "txt">과거의 후회와 미래의 희망 속에 현재라는 기회가 있다</p>
+		<div class ="row">
+			<div class = "col-xs-1 col-md-1 col-lg-1">
+				<span>01</span>
+			</div>
+			<div class = "col-xs-12 col-md-11 col-lg-11">
+				<p>대우직업전문학교</p>
+				<p>ICT기반 사물인터넷 응용SW제작과정</p>
+				<p>졸업</p>
+			</div>
+			<div class = "col-xs-1 col-md-1 col-lg-1">
+				<span>02</span>
+			</div>
+			<div class = "col-xs-12 col-md-11 col-lg-11">
+				<p>대덕전자기계고등학교</p>
+				<p>로봇제어과</p>
+				<p>2014년도 졸업</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class = "container-fluid" id ="self">
+	<div class = "container">
+		<h2 class = "port-title">SELF INRODUCTION</h2>
+		<p class = "txt">상사, 부하, 고객과 겸손한 후원자가 되어 우정을 나누는 일꾼이 되겠습니다.</p>
+		<div class="row">
+			<div class="col-xs-12 col-md-3">
+				<img src="img/self1.jpg" alt="" style="width: 100%; border-radius: 100%;">
+			</div>
+			<div class="col-xs-12 col-md-8 col-md-offset-1">
+				<h3>&lt;성장과정&gt;</h3>
+					<p style="line-height: 200%; color: #333;">항상 긍정적을 살아가라고 말씀하시는 어머니와 강하게 살아가라는 아버지 곁에서 자라면서 긍정적으로 생각하며 생각하게 되었습니다. 어릴 때 아버지가 강하게 키우면서 조금 소극적이며 남한테 의지하게 살았지만 중고등학교 친구들을 만나면서 서서히 활발해졌습니다. 그리고 저는 중학교 3한년때 진로의 고민이 많았습니다. 고등학교를 어디로 갈지 고민하던 중에 중학교 담임 선생님이 대덕전자기계고등학교 라는 고등학교를 추천 받았습니다. 그래서 인지 다른 인문계 고등학교 보다 특성화고인 대덕전자기계고등학교가 더 가고 싶다는 마음이 생겼습니다. 중학교때 친해진 친구들이랑 헤어지긴 싫어지만 하나라도 새로운 걸 배울 생각으로 이 학교에 진학을 했습니다. 고등학교에서 배운 전공은 1학년 때는 솔리드 웍스 및 납떔 위주로 배웠으며 2학년 때부터 제가 로봇제어과라는 전공을 선택 한 이후 부터는 솔리드 웍스를 이용해서 도형을 만들고 치수를 나타내게 도면을 그리면서 난이도를 높여 갔습니다. 로봇제어과를 선택을 해서 PLC라는 과목을 새로 배웠습니다. 처음에는 필기 위주로 공부하다가 지식이 쌓여가면서 PLC 자동화 시스템을 구축하고 구축한 시스템을 이용하여 사물을 통해 작동이 되는지 실습을 했습니다. 그리고 3학년 때부터 자격증 시험 토대로 공부를 하였습니다. 열심히 해서인지 그 해 7월에 생산자동화 기능사라는 자격증을 취득하였습니다.
+						그러고 나서 저는 군대에 입대해서 탄약관리라는 보직을 받았습니다. 총알을 관리하는 일을 하는 일이다 보니 다른 보직보다 더 까다로 웠습니다. 처음에는 어렵고 힘들었지만 시간이 흐르면서 하고 있는 일에 익숙해지고 지식도 많아지면서 자연스럽게 책임감이 생겼습니다. 그렇게 열심히 살아가다보니 무사히 사고 없이 전역을 하였습니다. 전역을 하고 무엇을 할지 고민을 하는 저는 대우직업전문학교 라는 국비지원 프로그램을 알게 되었고 컴퓨터계열에 관심이 많아서 직업전문학교를 다니게 되었습니다.
+					</p>
+			</div>
+        </div>
+		<div class = "row">
+			<div class = "col-xs-12 col-md-3">
+				<img src = "img/self2.jpg" alt ="" style ="width:100%; border-radius:100%;">
+			</div>
+			<div class="col-xs-12 col-md-8 col-md-offset-1">
+				<h4>&lt;성격과 장점&gt;</h4>
+				<p style = "line-height:160%;">인내력이 강하고 집중력이 강합니다. 한 가지 일을 맡았을 때 주위가 시끄럽거나 산만해도 인내력을 가지며 집중을 합니다. 항상 집에 있는 걸 좋아하며 주말마다 약속이 없는 한 집에 있기 때문에 체력 면에서는 쉽게 피곤하지 않고 항상 평일에는 집중력 및 몸의 피로가 쌓이지 않도록 주말에는 푹 쉬는 편입니다. 항상 긍정적으로 생각하며 나쁜 일 이 생긴다면 그럴 수 도 있구나 하고 넘어가는 위주라서 정신적으로도 건강한편이라고 생각합니다. 책, 영화, 만화를 좋아하며 주말에는 거의 3가지를 합니다.
+												저의 주변사람들의 말로는 긍정적이며 성격이 남을 잘 대해주고 편하게 만들어주는 느낌이 많다고 이야기를 많이 들었습니다. 그리고 좌절하거나 안 좋은일이 생기면 최대한 잊으려고 생각하며 남한테 함부로 기대려 하지 않고 최대한 자신이 스스로 해결하려는 마음가짐이 있습니다.</p>
+			</div>
+		</div><br>
+		<div class = "row">
+			<div class = "col-xs-12 col-md-3">
+				<img src = "img/self3.jpg" alt ="" style ="width:100%; border-radius:100%;">
+			</div>
+			<div class="col-xs-12 col-md-8 col-md-offset-1">
+				<h4>&lt;생활신조&gt;</h4>
+				<p style = "line-height:160%;">항상 입가의 웃음을 유지하면서 잘 웃고 다니는 게 저의 신조입니다. 항상 우울하게 있는 것보다 밝게 웃으면서 지내는 게 좋다고 생각합니다. 항상 울상 지거나 인상을 쓰면 보는 사람에 따라서 기분이 불쾌해 질 수도 있으니 최대한 밝게 지내려고 합니다. 다른 사람들한테 피해를 주는 것을 싫어하며 남한테 항상 도움을 받는 게 민폐라고 생각하여 최대한 남한테 피해를 안 주며 만약 도움을 받았다면 다시 보답해야 되 야 한다고 늘 생각합니다.
+												‘오늘 할 일을 내일로 미루지 말자‘ 말은 하기 쉽지만 늘 실천하기 어려운 이야기입니다. 하지만 저는 늘 실천하려 노력하고 있으며 더 이상 미루지 말자고 마음속으로 다짐합니다. </p>
+			</div>
+		</div><br>
+		<div class = "row">
+			<div class = "col-xs-12 col-md-3">
+				<img src = "img/self5.jpg" alt ="" style ="width:100%; border-radius:100%;">
+			</div>
+			<div class="col-xs-12 col-md-8 col-md-offset-1">
+				<h4>&lt;지원동기&gt;</h4>
+				<p style = "line-height:160%;">저는 대우직업전문학교르 다니면서 java, c언어, php, jsp, javascript, jquery 등등 여러 가지 배우고 이 회사를 들어가기 위해 회사에서 필요한 인재가 되기 위해 노력했습니다. 그렇기 때문에 이 회사를 지원하게 되었고 이 직종을 선택하고 첫 직장이니 만큼 신중하게 지원하게 되었습니다. 처음으로 들어가니 익숙하진 않지만 점점 발전해가는 모습을 보여드리며 만약 제가 이 회사를 들어 갈 수 있다면 회사의 훌륭한 개발자가 되어서 회사를 안정적이고 발전 시킬수 있는 밥 줄이 되고 싶습니다. </p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class = "container-fluid" id = "contact">
+	<h1 class = "port-title">Contact</h1>
+	<p class = "txt">이 하루도 숨쉬는 일상에 감사합니다.</p>
+	<div class = "container">
+		<form class="form-horizontal" name ="my" method ="post" action = "my.html" >
+		  <div class="form-group">
+			<label for="title" class="col-sm-2 control-label">제목</label>
+			<div class="col-sm-10">
+			  <input type="text" class="form-control" id="title" placeholder="title insert" name ="title">
+			</div>
+		  </div>
+		  <div class="form-group">
+			<label for="content" class="col-sm-2 control-label">내용</label>
+			<div class="col-sm-10">
+				<textarea class="form-control" rows="10" id = "content" name = "content"></textarea>
+			</div>
+		  </div>
+		  <div class="form-group">
+			<div class="col-sm-offset-2 col-sm-10">
+			  <input type="button" class="btn btn-default" value = "submit" onclick="javascript:check();">
+			</div>
+		  </div>
+		</form>
+	</div>
+</section>
+
+<script>
+	function check(){
+		if(checkok()==false)return;
+		if(confirm("전송하시겠습니까?")){
+			my.submit();
+		}else{
+			return;
+		}
+	}
+	function checkok(){
+		if($.trim($('#title').val())==''){
+		alert('title insert');
+		$('#title').focus();
+		return false;
+		}
+		if($.trim($('#content').val())==''){
+		alert('content insert');
+		$('#content').focus();
+		return false;
+		}
+		return true;
+	}
+	function mailcheck(){
+		if(mailcheckok()==false)return;
+		if(confirm("전송하시겠습니까?")){
+			mymail.submit();
+		}else{
+			return;
+		}
+	}
+	function mailcheckok(){
+		if($.trim($('#fname').val())==''){
+		alert('회사명 또는 이름 입력');
+		$('#fname').focus();
+		return false;
+		}
+		if($.trim($('#fmail').val())==''){
+		alert('메일 주소입력');
+		$('#fmail').focus();
+		return false;
+		}
+		if($.trim($('#subject').val())==''){
+		alert('제목입력');
+		$('#subject').focus();
+		return false;
+		}
+		if($.trim($('#mcontent').val())==''){
+		alert('내용입력');
+		$('#mcontent').focus();
+		return false;
+		}
+		return true;
+	}
+</script>
+
+
+<a href="#top" style = "padding:15px; background:#f00 color : #fff; position : fixed; right:2%; bottom:2%; display :none;" class ="top" >TOP</a>
+  <script>
+	$(function(){
+		$(".top").on("click",function(){
+			$("html,body").animate({
+			scrollTop:0
+			},800);
+		});
+		$(window).scroll(function(){
+			if($(this).scrollTop() > 200){
+			$(".top").fadeIn();
+			} else {
+			$(".top").fadeOut();
+			}
+		});
+	});
+  </script>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Webprograming potofolio</h4>
+      </div>
+      <div class="modal-body">
+		<p>월드컵 유니폼 쇼핑몰 프로그램개발</p>
+		<p>개발 구축환경 : MySQL 5.5, PHP 5.6,Apache 2.2, jquery, javascript</p>
+		<p>개발 업무 : 로그인, 장바구니, 회원가입,Full page, 관리자 프로그램</p>
+        <img src = "img/matocup.jpg" alt="포토폴리오" style = "width : 100%">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		<button type="button" class="btn btn-primary quick" onClick = "window.open(href='http://tomato97.dothome.co.kr/worldcup/cup_main.html','_blank');">바로가기</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Webprograming potofolio</h4>
+      </div>
+      <div class="modal-body">
+		<p>일반 커뮤니케이션 홈페이지 프로그램개발</p>
+		<p>개발 구축환경 : MySQL 5.5, PHP 5.6,Apache 2.2, jquery, javascript</p>
+		<p>개발 업무 : 뉴스, 공지사항, 포토, 자유게시판, 페이지, 회원가입, 댓글, 관리자 프로그램</p>
+        <img src = "img/tree_main.jpg" alt="포토폴리오" style = "width : 100%">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		<button type="button" class="btn btn-primary quick" onClick = "window.open(href='http://tomato97.dothome.co.kr/tomato/tree_main.html','_blank');">바로가기</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Webprograming potofolio</h4>
+      </div>
+      <div class="modal-body">
+		<p>JAVA 사원과리 및 거래처 관리 프로그램</p>
+		<p>개발 구축환경 : MySQL 5.5, java</p>
+		<p>개발 업무 : 로그인, 사원관리, 물품코드관리, 완성품코드관리, 거래처 관리, 관리자 프로그램</p>
+        <img src = "img/java08.jpg" alt="포토폴리오" style = "width : 100%">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		<button type="button" class="btn btn-primary quick" onClick = "openModal25();currentSlide25(1)">더 보기</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<h4 class="modal-title" id="myModalLabel">Webprograming potofolio</h4>
+		  </div>
+		  <div class="modal-body">
+			<p>일반 학원용 홈페이지</p>
+			<p>개발 구축환경 : mysql, jsp, jquery</p>
+			<p>개발 업무 : 제품안내, 공지사항, 페이지, 뉴스, 회원가입, 관리자 프로그램</p>
+			<div class="row10">
+			  <div class="column24" style = "width :100%;">
+				<img src="img/jsp1.jpg" style="width:100%" onclick="openModal24();currentSlide24(1)" class="hover-shadow cursor24">
+			 </div>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			<button type="button" class="btn btn-primary quick" onClick = "openModal24();currentSlide24(1)">더 보기</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+</div>
+
+<div id="myModal24" class="modal24" style = "z-index : 1045;">
+  <span class="close24 cursor24" onclick="closeModal24()">&times;</span>
+  <div class="modal24-content">
+
+    <div class="mySlides24">
+      <div class="numbertext">1 / 9</div>
+      <img src="img/jsp1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides24">
+      <div class="numbertext">2 / 9</div>
+      <img src="img/jsp2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides24">
+      <div class="numbertext">3 / 9</div>
+      <img src="img/jsp3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides24">
+      <div class="numbertext">4 / 9</div>
+      <img src="img/jsp4.jpg" style="width:100%">
+    </div>
+
+	 <div class="mySlides24">
+      <div class="numbertext">5 / 9</div>
+      <img src="img/jsp5.jpg" style="width:100%">
+    </div>
+
+	<div class="mySlides24">
+      <div class="numbertext">6 / 9</div>
+      <img src="img/jsp6.jpg" style="width:100%">
+    </div>
+
+	<div class="mySlides24">
+      <div class="numbertext">7 / 9</div>
+      <img src="img/jsp7.jpg" style="width:100%">
+    </div>
+
+	<div class="mySlides24">
+      <div class="numbertext">8 / 9</div>
+      <img src="img/jsp8.jpg" style="width:100%">
+    </div>
+
+	<div class="mySlides24">
+      <div class="numbertext">9 / 9</div>
+      <img src="img/jsp9.jpg" style="width:100%">
+    </div>
+
+    <a class="prev24" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next24" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption24-container">
+      <p id="caption24"></p>
+    </div>
+
+
+    <div class="column24">
+      <img class="demo24 cursor24" src="img/jsp1.jpg" style="width:100%" onclick="currentSlide24(1)" alt="홈페이지 메인 페이지">
+    </div>
+    <div class="column24">
+      <img class="demo24 cursor24" src="img/jsp2.jpg" style="width:100%" onclick="currentSlide24(2)" alt="홈페이지 뉴스 페이지">
+    </div>
+    <div class="column24">
+      <img class="demo24 cursor24" src="img/jsp3.jpg" style="width:100%" onclick="currentSlide24(3)" alt="홈페이지 공지사항 페이지">
+    </div>
+    <div class="column24">
+      <img class="demo24 cursor24" src="img/jsp4.jpg" style="width:100%" onclick="currentSlide24(4)" alt="홈페이지 제품안내 페이지">
+    </div>
+	<div class="column24">
+      <img class="demo24 cursor24" src="img/jsp5.jpg" style="width:100%" onclick="currentSlide24(5)" alt="홈페이지 일반회원 로그인 페이지">
+    </div>
+	<div class="column24">
+      <img class="demo24 cursor24" src="img/jsp6.jpg" style="width:100%" onclick="currentSlide24(6)" alt="홈페이지 관리자 로그인 페이지">
+    </div>
+	<div class="column24">
+      <img class="demo24 cursor24" src="img/jsp7.jpg" style="width:100%" onclick="currentSlide24(7)" alt="일반회원 로그인 실행시 메인페이지">
+    </div>
+	<div class="column24">
+      <img class="demo24 cursor24" src="img/jsp8.jpg" style="width:100%" onclick="currentSlide24(8)" alt="일반회원 회원가입 페이지">
+    </div>
+	<div class="column24">
+      <img class="demo24 cursor24" src="img/jsp9.jpg" style="width:100%" onclick="currentSlide24(9)" alt="관리자 로그인 실행시 메인페이지">
+    </div>
+  </div>
+</div>
+<!-- modal25 -->
+
+<div id="myModal25" class="modal25" style = "z-index : 1045;">
+  <span class="close25 cursor25" onclick="closeModal25()">&times;</span>
+  <div class="modal25-content">
+
+    <div class="mySlides25">
+      <div class="numbertext25">1 / 12</div>
+      <img src="img/java08.jpg" style="width:100%;">
+    </div>
+
+    <div class="mySlides25">
+      <div class="numbertext25">2 / 12</div>
+      <img src="img/java09.jpg" style="width:100%;">
+    </div>
+
+    <div class="mySlides25">
+      <div class="numbertext25">3 / 12</div>
+      <img src="img/java10.jpg" style="width:100%;">
+    </div>
+
+    <div class="mySlides25">
+      <div class="numbertext25">4 / 12</div>
+      <img src="img/java11.jpg" style="width:100%">
+    </div>
+
+	 <div class="mySlides25">
+      <div class="numbertext25">5 / 12</div>
+      <img src="img/java12.jpg" style="width:100%">
+    </div>
+
+	<div class="mySlides25">
+      <div class="numbertext25">6 / 12</div>
+      <img src="img/java01.jpg" style="width:100%">
+    </div>
+
+	<div class="mySlides25">
+      <div class="numbertext25">7 / 12</div>
+      <img src="img/java02.jpg" style="width:100%">
+    </div>
+
+	<div class="mySlides25">
+      <div class="numbertext25">8 / 12</div>
+      <img src="img/java03.jpg" style="width:100%">
+    </div>
+	<div class="mySlides25">
+      <div class="numbertext25">9 / 12</div>
+      <img src="img/java04.jpg" style="width:100%">
+    </div>
+	<div class="mySlides25">
+      <div class="numbertext25">10 / 12</div>
+      <img src="img/java05.jpg" style="width:100%">
+    </div>
+	<div class="mySlides25">
+      <div class="numbertext25">11 / 12</div>
+      <img src="img/java06.jpg" style="width:100%">
+    </div>
+	<div class="mySlides25">
+      <div class="numbertext25">12 / 12</div>
+      <img src="img/java07.jpg" style="width:100%">
+    </div>
+
+    <a class="prev25" onclick="plusSlides25(-1)">&#10094;</a>
+    <a class="next25" onclick="plusSlides25(1)">&#10095;</a>
+
+    <div class="caption25-container">
+      <p id="caption25"></p>
+    </div>
+
+
+    <div class="column25">
+      <img class="demo25 cursor25" src="img/java08.jpg" style="width:100%" onclick="currentSlide25(1)" alt="사원 로그인 페이지">
+    </div>
+    <div class="column25">
+      <img class="demo25 cursor25" src="img/java09.jpg" style="width:100%" onclick="currentSlide25(2)" alt="사원 정보 페이지">
+    </div>
+    <div class="column25">
+      <img class="demo25 cursor25" src="img/java10.jpg" style="width:100%" onclick="currentSlide25(3)" alt="사원 기본정보 페이지">
+    </div>
+    <div class="column25">
+      <img class="demo25 cursor25" src="img/java11.jpg" style="width:100%" onclick="currentSlide25(4)" alt="사원 수정 페이지">
+    </div>
+	<div class="column25">
+      <img class="demo25 cursor25" src="img/java12.jpg" style="width:100%" onclick="currentSlide25(5)" alt="관리자 페이지">
+    </div>
+	<div class="column25">
+      <img class="demo25 cursor25" src="img/java01.jpg" style="width:100%" onclick="currentSlide25(6)" alt="학력코드 페이지">
+    </div>
+	<div class="column25">
+      <img class="demo25 cursor25" src="img/java02.jpg" style="width:100%" onclick="currentSlide25(7)" alt="부서코드 페이지">
+    </div>
+	<div class="column25">
+      <img class="demo25 cursor25" src="img/java03.jpg" style="width:100%" onclick="currentSlide25(8)" alt="직급코드 페이지">
+    </div>
+	<div class="column25">
+      <img class="demo25 cursor25" src="img/java04.jpg" style="width:100%" onclick="currentSlide25(9)" alt="매입 거래처 페이지">
+    </div>
+	<div class="column25">
+      <img class="demo25 cursor25" src="img/java05.jpg" style="width:100%" onclick="currentSlide25(9)" alt="매출 거래처 페이지">
+    </div>
+	<div class="column25">
+      <img class="demo25 cursor25" src="img/java06.jpg" style="width:100%" onclick="currentSlide25(9)" alt="물품코드 관리페이지">
+    </div>
+	<div class="column25">
+      <img class="demo25 cursor25" src="img/java07.jpg" style="width:100%" onclick="currentSlide25(9)" alt="완성품 코드 관리페이지">
+    </div>
+  </div>
+</div>
+
+<script>
+function openModal25() {
+  document.getElementById('myModal25').style.display = "block";
+  document.getElementById('myModal3').style.display = "none";
+}
+
+function closeModal25() {
+  document.getElementById('myModal25').style.display = "none";
+}
+
+var slideIndex25 = 1;
+showSlides25(slideIndex25);
+
+function plusSlides25(n) {
+  showSlides25(slideIndex25 += n);
+}
+
+function currentSlide25(n) {
+  showSlides25(slideIndex25 = n);
+}
+
+function showSlides25(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides25");
+  var dots = document.getElementsByClassName("demo25");
+  var captionText = document.getElementById("caption25");
+  if (n > slides.length) {slideIndex25 = 1}
+  if (n < 1) {slideIndex25 = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex25-1].style.display = "block";
+  dots[slideIndex25-1].className += " active";
+  captionText.innerHTML = dots[slideIndex25-1].alt;
+}
+</script>
+
+<script>
+function openModal24() {
+  document.getElementById('myModal24').style.display = "block";
+  document.getElementById('myModal4').style.display = "none";
+}
+
+function closeModal24() {
+  document.getElementById('myModal24').style.display = "none";
+}
+
+var slideIndex24 = 1;
+showSlides24(slideIndex24);
+
+function plusSlides(n) {
+  showSlides24(slideIndex24 += n);
+}
+
+function currentSlide24(n) {
+  showSlides24(slideIndex24 = n);
+}
+
+function showSlides24(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides24");
+  var dots = document.getElementsByClassName("demo24");
+  var captionText = document.getElementById("caption24");
+  if (n > slides.length) {slideIndex24 = 1}
+  if (n < 1) {slideIndex24 = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex24-1].style.display = "block";
+  dots[slideIndex24-1].className += " active";
+  captionText.innerHTML = dots[slideIndex24-1].alt;
+}
+</script>
+
+
+
+
+<!-- modall mail send-->
+<div class="modal fade" id="mail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">메일 보내기</h4>
+      </div>
+      <div class="modal-body">
+			<form class="form-horizontal" name ="mymail" method ="post" action = "mailer_test.php" >
+		  <div class="form-group">
+			<label for="fname" class="col-sm-2 control-label">회사명</label>
+			<div class="col-sm-10">
+			  <input type="text" class="form-control" id="fname" name="fname" placeholder="회사명 또는 보내는사람">
+			</div>
+		  </div>
+		  <div class="form-group">
+			<label for="fmail" class="col-sm-2 control-label">메일주소</label>
+			<div class="col-sm-10">
+			  <input type="text" class="form-control" id="fmail" name="fmail" placeholder="메일주소">
+			</div>
+		  </div>
+		  <div class="form-group">
+			<label for="subject" class="col-sm-2 control-label">제목</label>
+			<div class="col-sm-10">
+			  <input type="text" class="form-control" id="subject" name="subject" placeholder="제목">
+			</div>
+		  </div>
+		  <div class="form-group">
+			<label for="mcontent" class="col-sm-2 control-label">내용</label>
+			<div class="col-sm-10">
+				<textarea class="form-control" rows="10" id = "mcontent" name = "mcontent"></textarea>
+			</div>
+		  </div>
+		  <div class="form-group">
+			<div class="col-sm-offset-2 col-sm-10">
+			  <input type="button" class="btn btn-default" value = "submit" onclick="javascript:mailcheck();">
+			</div>
+		  </div>
+		</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </body>
+</html>
