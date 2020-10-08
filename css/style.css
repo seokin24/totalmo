@@ -1,0 +1,294 @@
+@charset "utf-8";
+
+/*
+	font-family: 'Bebas Neue', cursive;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-family: 'Nanum Pen Script', cursive;
+	font-family: 'Sunflower', sans-serif;
+	font-family: 'Jua', sans-serif;
+	font-family: 'Cute Font', cursive;
+	font-family: 'Single Day', cursive;
+*/
+*{font-family: 'Noto Sans KR', sans-serif;}
+body{overflow-x:hidden;}
+body, ul, li{list-style:none; margin:0; padding:0; font-family: 'Noto Sans KR', sans-serif;}
+body{background-color:black;}
+a{text-decoration:none;}
+
+.header{width:100%;  background-color:black; font-family: 'Bebas Neue', cursive; display:none; position:fixed; top:0; z-index:1;}
+.header > li{font-size:60px; color:white; padding:10px 30px; font-family: 'Bebas Neue', cursive; letter-spacing: 1px; }
+.videodiv{height:780px; width:100%; position:relative;}
+.videobox_sub{position: absolute;left: 50%;top: 50%;min-width: 100%;min-height: 100%;height: auto;width: auto;transform: translate(-50%,-50%);}
+.videobox_sub > video {width:100%; height:100%;}
+.maindiv{width:100%; padding-top:100px;}
+.sunsubox{width:1400px; margin:0 auto; overflow:hidden;}
+.number30{width:425px; height: 450px; float:left; padding:60px 20px; overflow:hidden; display:none;}
+.number30imgbox{width:100%; height:350px;}
+.number30imgbox > img{width:100%; height:100%;}
+.number30textbox{width:100%; height:100px; background-color:black; transition: 2s ease; color:white;}
+.number30textbox > li{font-size:30px; line-height:98px; padding-left:20px; font-weight:bold; font-family: 'Bebas Neue', cursive; letter-spacing: 1px; }
+.number30:hover > .number30textbox{background-color:white; color:black}
+
+.videotitletext{position:absolute; top:40%; left:27%; color:white; z-index:1; display:none; font-size:100px; font-family: 'Bebas Neue', cursive; letter-spacing: 8px; }
+.videotitletext > span{color:#F3F781; font-family: 'Bebas Neue', cursive;}
+.videotext{position:absolute; top:50%; left:30%; color:white; z-index:1; display:none; font-size:50px; font-family: 'Bebas Neue', cursive; letter-spacing: 8px}
+
+.number30imgbox{position:relative;}
+.numbffk{position:absolute; top:0;left:0; width:0px;}
+.numbffk > img{width:0px; height:0px; transition: 2.0s ease-in-out;}
+.number30imgbox:hover > .numbffk > img{width:425px; height:350px; }
+
+.top3seonsu{width:100%; padding-top:160px;}
+.messidiv{width:1200px; height:600px; background-color:black; margin: 0 auto; position:relative;}
+.messidiv:after{content:""; clear:both; display:block;}
+.messiimg{width:800px; height:100%; float:left;}
+.messiimg >img{width:100%; height:100%;}
+.messitext{width:400px; height:100%; float:left;}
+.messitexttop{width:100%;height:50%; color:white;}
+.messispan1{color:white; font-size:80px; padding-left:15px; font-family: 'Bebas Neue', cursive;}
+.messispan2{color:white; font-size:50px; padding-left:20px; font-family: 'Bebas Neue', cursive;}
+.messitextbottom{width:100%;height:50%;}
+.messitextbottom:after{content:""; clear:both; display:block;}
+.messitextbottom > div{width:50%;height:50%; float:left; color:white;}
+
+
+.vandiv{width:1200px; height:600px; background-color:black; margin: 0 auto; position:relative;}
+.vandiv:after{content:""; clear:both; display:block;}
+.vanimg{width:800px; height:100%; float:left;}
+.vanimg >img{width:100%; height:100%;}
+.vantext{width:400px; height:100%; float:left;}
+.vantexttop{width:100%;height:50%; color:white;}
+.vanspan1{color:white; font-size:80px; padding-left:15px; font-family: 'Bebas Neue', cursive;}
+.vanspan2{color:white; font-size:50px; padding-left:20px; font-family: 'Bebas Neue', cursive;}
+.vantextbottom{width:100%;height:50%;}
+.vantextbottom:after{content:""; clear:both; display:block;}
+.vantextbottom > div{width:50%;height:50%; float:left; color:white;}
+
+
+.ronaldodiv{width:1200px; height:600px; background-color:black; margin: 0 auto; position:relative;}
+.ronaldodiv:after{content:""; clear:both; display:block;}
+.ronaldoimg{width:800px; height:100%; float:left;}
+.ronaldoimg >img{width:100%; height:100%;}
+.ronaldotext{width:400px; height:100%; float:left;}
+.ronaldotexttop{width:100%;height:50%; color:white;}
+.ronaldospan1{color:white; font-size:80px; padding-left:15px; font-family: 'Bebas Neue', cursive;}
+.ronaldospan2{color:white; font-size:50px; padding-left:20px; font-family: 'Bebas Neue', cursive;}
+.ronaldotextbottom{width:100%;height:50%;}
+.ronaldotextbottom:after{content:""; clear:both; display:block;}
+.ronaldotextbottom > div{width:50%;height:50%; float:left; color:white;}
+
+
+
+.toptrerediv{width:1200px; height:900px; margin:0 auto; margin-top:50px;}
+.toptrerediv > img{width:100%; height:100%;}
+
+.toptoto3{width:100%; height:100%; display:none;}
+.toptoto3:after{content:""; clear:both; display:block;}
+.toptoto3 > div{width:33.3%; height:100%; float:left;position:relative;}
+.toptoto3 > div > span{}
+.toptoto3 > div > img{width:100%; height:100%;}
+.vanspan{position:absolute; color:white; top:90%; left:30%; font-family: 'Bebas Neue', cursive; letter-spacing: 1px; font-size:50px;}
+.messispan{position:absolute; color:white; top:90%; left:25%; font-family: 'Bebas Neue', cursive; letter-spacing: 1px; font-size:50px;}
+.ronaldospan{position:absolute; color:white; top:90%; left:10%; font-family: 'Bebas Neue', cursive; letter-spacing: 1px; font-size:50px;}
+
+#slideWrap1,
+#slideWrap2,
+#slideWrap3,
+#slideWrap4,
+#slideWrap5,
+#slideWrap6,
+#slideWrap10,
+#slideWrap20,
+#slideWrap30,
+#slideWrap40,
+#slideWrap50,
+#slideWrap60,
+#slideWrap70,
+#slideWrap80,
+#slideWrap90{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.slideList {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slideImg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.slslsl{
+	 clip: rect( 20px, 220px, 220px, 20px );
+}
+.slideTxt {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #222328;
+    width: 230px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+/**************************************************/
+/*************** �섏씠�� ��/�꾩썐 ******************/
+/**************************************************/
+
+
+#slideWrap1 .slideA {
+    width: 780px;
+    height: 350px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+#slideWrap1 .slideA:nth-child(1) { z-index: 300; }
+#slideWrap1 .slideA:nth-child(2) { z-index: 200; }
+#slideWrap1 .slideA:nth-child(3) { z-index: 100; }
+
+/**************************************************/
+/************** �щ씪�대뱶 醫�/or �� *****************/
+/**************************************************/
+
+#slideWrap2 .slideA {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+#slideWrap10 .slideA{
+	width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+#slideWrap20 .slideA{
+	width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+#slideWrap30 .slideA{
+	width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+#slideWrap40 .slideA{
+	width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+#slideWrap50 .slideA{
+	width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+/**************************************************/
+/************** �щ씪�대뱶 ��/or �� *****************/
+/**************************************************/
+
+#slideWrap3 .slideA {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+#slideWrap4 .slideA {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+#slideWrap60 .slideA {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+#slideWrap70 .slideA {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+#slideWrap80 .slideA {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+#slideWrap90 .slideA {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+#mobileslideWrap .slideA {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+.header > li{position:relative;}
+.header > li > span{position:absolute; top:30px; right:60px; font-size:30px; font-family: 'Bebas Neue', cursive;}
+.header > li > span > b {color:#F3F781; font-family: 'Sunflower', sans-serif;}
+@media(max-width:1800px) {
+	.videotitletext {position: absolute;top: 40%;left: 27%;}
+}
+
+@media(max-width:1920px) {
+	.videotitletext {position: absolute;top: 50%;left: 32%;}
+}
+@media(max-width:460px) {
+	.videodiv{height:500px; width:100%; position:relative;}
+	.videobox_sub{position: absolute;left: 50%;top: 50%;min-width: 100%;min-height: 100%;height: auto;width: auto;transform: translate(-50%,-50%);}
+	.videobox_sub > video {width:100%; height:100%;}
+	.mobilemain{width:100%;}
+	.mobileseonsu{width:90%; height:400px; margin: 0 auto; margin-top:30px; display:none; border: 1px solid yellow;}
+	.mobileseonsuimg{width:100%; height:300px;}
+	.mobileseonsuimg > img{width:100%; height:100%;}
+	.mobileseonsutext{width:100%; height:100px; background-color:black; color:white; position:relative;}
+	.mobileseonsutext > li{position:absolute; font-size:30px; top:30px; left:10px; font-family: 'Bebas Neue', cursive;}
+	.mobileheader{width:100%; height:100px; color:white;  font-family: 'Bebas Neue', cursive; font-size:25px; position:relative;}
+	.mobileheader > li{font-family: 'Bebas Neue', cursive; position:absolute; top:25px; left:20px; font-size:40px;}
+	.mobileheader > span{position:absolute; top:32px; right:20px; font-size:20px; font-family: 'Bebas Neue', cursive;}
+	.mobileheader > span > b{color: yellow; font-size:20px;}
+	}
